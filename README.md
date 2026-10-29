@@ -1,46 +1,43 @@
-### Step-by-Step Guide to Create a GitHub Repository
+# LUNEVIA
 
-1. **Sign in to GitHub**:
-   - Go to [GitHub](https://github.com) and log in to your account.
+**Lunar Navigation, Exploration, Verification & Intelligent Autonomy**
 
-2. **Create a New Repository**:
-   - Click on the "+" icon in the upper right corner of the GitHub page.
-   - Select "New repository" from the dropdown menu.
+LUNEVIA is a browser-based lunar rover mission simulation. It demonstrates how a rover might plan routes, assess terrain, manage energy, respond to simulated faults, and operate autonomously when communications are unavailable.
 
-3. **Repository Details**:
-   - **Repository Name**: Enter `lunar-navigation-exploration-verification-autonomy`.
-   - **Description**: Provide a brief description, e.g., "A project focused on lunar navigation, exploration, verification, and intelligent autonomy."
-   - **Public/Private**: Choose whether you want the repository to be public (visible to everyone) or private (only visible to you and collaborators).
-   - **Initialize this repository with**:
-     - You can choose to add a README file, which is a good practice to describe your project.
-     - Optionally, you can add a `.gitignore` file for your preferred programming language.
-     - You can also choose a license for your project (e.g., MIT License).
+> **Simulation only.** This project does not control a real rover or use live mission data. Terrain, sensor readings, and mission results are simulated.
 
-4. **Create Repository**:
-   - Click the "Create repository" button at the bottom of the page.
+## Run locally
 
-5. **Clone the Repository (Optional)**:
-   - After creating the repository, you can clone it to your local machine using the command:
-     ```bash
-     git clone https://github.com/your-username/lunar-navigation-exploration-verification-autonomy.git
-     ```
-   - Replace `your-username` with your actual GitHub username.
+No build step or package installation is required.
 
-6. **Add Project Files**:
-   - You can now add files to your repository. You can do this either through the GitHub web interface or by adding files locally and pushing them to the remote repository.
+1. Open the HTML file directly in a modern browser, or open it in Visual Studio Code and run it with a local server extension.
+2. Select **START MISSION** or **EXPLORE SYSTEM**.
+3. Use **START DEMO** to run the guided scenario.
 
-7. **Commit and Push Changes** (if working locally):
-   - After adding files locally, use the following commands to commit and push your changes:
-     ```bash
-     git add .
-     git commit -m "Initial commit"
-     git push origin main
-     ```
+Google Fonts are loaded from an external service, so they may not appear without an internet connection.
 
-### Additional Tips
+## Features
 
-- **Documentation**: Consider adding a `docs` folder for detailed documentation of your project.
-- **Issues and Projects**: Utilize GitHub's Issues and Projects features to manage tasks and track progress.
-- **Collaboration**: If you plan to collaborate with others, you can invite them as collaborators in the repository settings.
+- Interactive lunar terrain map with selectable data layers
+- Simulated rover telemetry and configurable capability limits
+- Route planning with terrain and return-energy checks
+- Mission objectives, targets, and waypoint assignment
+- Simulated sensor, communication, and environmental events
+- AI copilot, mission log, black box, and replay tools
+- Guided tour and rover camera visualization
 
-Now your GitHub repository for the "Lunar Navigation, Exploration, Verification & Intelligent Autonomy" project is set up and ready for development!
+## Project structure
+
+```text
+.
+├── LUNEVIA — Lunar Navigation, Exploration, Verification & Intelligent Autonomy (2).html
+└── README.md
+```
+
+## Data and storage
+
+The simulation generates its terrain, readings, and mission events in the browser. Mission black-box entries may be saved in browser `localStorage`; they are not uploaded to a server.
+
+## License
+
+No license is specified. Add a `LICENSE` file before redistributing the project if you want to grant others permission to use or modify it.
